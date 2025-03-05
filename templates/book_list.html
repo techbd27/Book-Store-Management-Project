@@ -14,7 +14,8 @@
                         <h6 class="card-subtitle text-muted mb-2">{{ book.author }}</h6>
                         <p class="card-text">{{ book.description|truncatechars:100 }}</p>
                         <p><strong>Published Year:</strong> {{ book.published_year }}</p>
-                    
+                        
+                      
                         <a href="{% url 'delete_book' book.id %}" class="btn btn-danger btn-sm">Delete</a>
                     </div>
                 </div>
